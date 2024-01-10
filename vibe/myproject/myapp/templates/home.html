@@ -1,0 +1,1257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Astral Aura</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet"href="main.css">
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <style>
+          *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Source Code Pro', monospace;
+}
+/*=======Navbar===*/
+.bg{
+    background: #077cb3;
+}
+.main-navbar-light{
+    background:transparent!important;
+    position: absolute;
+    left:0;
+    right:0;
+    z-index:3;
+    top:10px;
+}
+/*====End of Navabr==*/
+/*====Hero Section===*/
+.hero-wrap{
+    width:100%;
+    height:850px;
+    position:relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index:0;
+}
+.hero-wrap .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    content:"";
+    opacity: .5;
+    background: #077cb3;
+    height: 850px;
+}
+.hero-wrap .main-text{
+    height:800px!important;
+
+}
+.main-text h1{
+    font-size:60px;
+    color:#fff;
+    line-height:1.1;
+    font-weight: bold;
+
+}
+.main-text p{
+    line-height: 1.5;
+   color:#fff;
+}
+.btn-hero{
+    background-color: #030157!important;
+    color:#fff!important;
+    margin-right:5px;
+    margin-left:5px;
+    animation:skew 3s infinite;
+    animation-direction: normal;
+    transform: skew(20deg);
+    animation-direction: alternate;
+    padding:5px 17px;
+}
+@keyframes skew{
+    0%{
+        transform: skewX(20deg);
+    }
+    100%{
+        transform: skewX(-20deg);
+    }
+}
+/*====End of Hero Section===*/
+ .btn-search{
+    background:#021633!important;
+    border:2px solid #021633;
+    color:#fff!important;
+    margin-left: 3px!important;
+}
+ .btn-search:hover{
+    border:2px solid #021633;
+    background:transparent;
+    color:#021633;
+}
+.section-search {
+    background: #018ca5; }
+
+
+  @media (min-width: 768px) {
+    .tabulation-search {
+      margin-top: -60px; } }
+
+  .tab-search .nav-pills p {
+    margin-bottom: 0; }
+
+  .tab-search .nav-pills .nav-link {
+    float: left;
+    border-radius: 0;
+    margin-bottom: 0;
+    background: white; }
+    .tab-search .nav-pills .nav-link.active {
+      background: #5f9fff; }
+      @media (min-width: 768px) {
+        .tab-search .nav-pills .nav-link.active {
+          margin-top: -10px; } }
+    @media (max-width: 767.98px) {
+      .tab-search .nav-pills .nav-link {
+        display: block;
+        width: 100%; } }
+/*==========Popular Places===========*/
+/*----Popular Places---*/
+.popular {
+    background-image: url(https://i.postimg.cc/mgQkS98s/hero-2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 180px;
+    padding-bottom: 340px;
+  }
+  .popular:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background:linear-gradient(rgba(26, 144, 255, 0.5),rgba(236, 5, 236, 0.4)),
+    url(./images/hero-2.jpg)center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .all-image {
+    padding-bottom: 75px;
+    position: relative;
+    margin-top: -295px;
+  }
+  .all-image .single-img {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  .all-image .single-img .img-thumb {
+    height: 410px;
+  }
+  .all-image .single-img .img-thumb img {
+    width: 100%;
+    height: 100%;
+  }
+  .all-image .single-img .img-hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(2, 58, 110, 0.6);
+    transform: translateX(-50%);
+    transition: 0.5s;
+    opacity: 0;
+    overflow: hidden;
+  }
+  .all-image .single-img .img-hover .title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transform: translateY(-50%);
+  }
+  .all-image .single-img .img-hover h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .all-image .single-img:hover .img-hover {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+/*==========End of Popular Places===========*/
+/*========== Services section===========*/
+
+/*==========End of Services section===========*/
+.team .member{
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+}
+.team .member .member-img{
+    position: relative;
+    overflow: hidden;
+}
+.team .member .social{
+    position: absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    height: 40px;
+    opacity: 0;
+    transition: ease-in-out .3s;
+    text-align: center;
+    background: rgba(255,255,255,0.8);
+}
+.team .member .social a{
+    transition: color 0.3s;
+    color: #000;
+    margin:0 10px;
+    padding-top:8px;
+    display: inline-block;
+}
+.team .member .social a:hover{
+    color:#2181ff;
+}
+.team .member .social i{
+    font-size: 18px;
+    margin:0 2px;
+}
+.team .member .member-info{
+    padding: 25px 15px;
+}
+
+.team .member .member-info h4{
+    font-weight: bold;
+    margin-bottom:5px;
+    font-size: 18px;
+    color:#000;
+}
+
+.team .member .member-info span{
+    display:block ;
+    font-size: 14px;
+    font-weight: lighter;
+    color:#000;
+}
+
+.team .member .member-info p{
+    font-style: italic;
+    font-style: 15px;
+    line-height: 26px;
+    color:#000;
+}
+
+.team .member:hover .social{
+    opacity: 1;
+}
+/*======Package section==========*/
+.package{
+    position: relative;
+    z-index:1;
+}
+.package:after{
+    position: absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height: 46%;
+    content:"" ;
+    background-color: #02acf0;
+}
+.package .package-1{
+    position: relative;
+    z-index:1;
+    background-color: #02acf0;
+}
+@media (max-width:576px){
+    .package .package-1{
+        margin-bottom:250px;
+    }
+}
+.package .package-1 .package-text{
+    position:absolute;
+    right:0px;
+    top:0px;
+    width:271px;
+    background: #02acf0;
+    padding:35px 22px;
+    box-shadow: 0px 0px 0px 10px rgba(2,3,63,0.5);
+    margin:10px;
+}
+@media(max-width:576px){
+    .package .package-1 .package-text{
+        top:50%;
+    }
+}
+.package .package-1 .package-text p{
+    color:#fff;
+    margin-top: 35px;
+}
+.package .package-1 .package-text .btn-package{
+    margin-top:22px;
+}
+.btn-package{
+    background: #030157;
+    color:#fff;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+/*=======End of package section=====*/
+/*======= historical places section=====*/
+.historical-places{
+    padding-top: 130px;
+    padding-bottom: 140px;
+    background: #f7fafd;
+}
+.historical-places .single-dest{
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.3s;
+    margin-bottom:30px;
+}
+.historical-places .single-dest .thumb{
+    position:relative;
+    overflow: hidden;
+}
+.historical-places .single-dest .thumb img{
+    width:100%;
+
+}
+.historical-places .single-dest .thumb .price{
+    position: absolute;
+    background:#02acf0;
+    padding:7px 18px 4px 18px;
+    display:inline-block;
+    top:20px;
+    left:20px;
+    border-radius: 18px;
+    color:#fff;
+    font-size:16px;
+    transition: 0.3s;
+}
+.historical-places .single-dest .dest-info{
+    padding:27px 20px 25px 20px;
+}
+.historical-places .single-dest .dest-info h3{
+    font-size:22px;
+    font-weight: bold;
+    color:#040e27;
+    margin-bottom: 0;
+    transition:0.3s;
+}
+.historical-places .single-dest .dest-info p{
+    font-size: 14px;
+    font-weight: lighter;
+    color:#000;
+    margin-top:2px;
+    margin-bottom: 7px;
+}
+.historical-places .single-dest .dest-info .rating span i{
+    font-size: 12px;
+    color:#f88408;
+}
+.historical-places .single-dest .dest-info .rating span a{
+    font-size: 14px;
+    color:#000;
+    margin-left:5px;
+}
+.historical-places .single-dest .dest-info .rating .days{
+    font-size:14px;
+    font-weight: light;
+    color:#000;
+}
+.historical-places .single-dest .dest-info .rating .days i{
+    margin-right: 8px;
+}
+.historical-places .single-dest .dest-info .rating .days a{
+    font-size:14px;
+    color:#000;
+}
+.historical-places .single-dest:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+.historical-places .single-dest:hover .dest-info h3{
+    color:#030942;
+}
+.historical-places .single-dest:hover .thumb .price{
+    background: #0292f1;
+}
+.historical-places .btn-hist{
+    margin-top: 10px;
+}
+.btn-hist{
+    background-color: #030157!important;
+    color:#fff!important;
+    margin-right:5px;
+    margin-left:5px;
+    animation:skew 3s infinite;
+    animation-direction: normal;
+    transform: skew(20deg);
+    animation-direction: alternate;
+    padding:3px 3px;
+}
+@keyframes skew{
+    0%{
+        transform: skewX(20deg);
+    }
+    100%{
+        transform: skewX(-20deg);
+    }
+}
+/*=======End of historical places section=====*/
+/*======Testimonial section===*/
+.testimonial-section{
+    padding-bottom: 60px;
+
+}
+.testimonial-section .section-title h2{
+    font-weight: 60px;
+    color:#000;
+    margin-top: 0;
+}
+.testimonial-item{
+    margin-bottom:40px;
+}
+.testimonial-item .test-date{
+    font-size: 11px;
+    letter-spacing: 1.2px;
+    color:#242424;
+    opacity:0.5;
+    font-weight: 600;
+    line-height: 36px;
+}
+.testimonial-item h4{
+    color:#242424;
+    font-weight:600;
+    margin-bottom: 6px;
+}
+.testimonial-item .rating{
+    margin-bottom:15px;
+}
+.testimonial-item .rating i{
+    color:#ed8a19;
+}
+.testimonial-item p{
+    letter-spacing: 0.2px;
+    margin-bottom:30px;
+}
+.testimonial-item .customer{
+    overflow:hidden;
+}
+.testimonial-item .customer .customer-photo{
+   float:left;
+   margin-right:18px;
+}
+.testimonial-item .customer .customer-photo img{
+  height:60px;
+  width:60px;
+  border-radius: 50%;
+}
+.testimonial-item .customer .test-text{
+    float:left;
+    padding-top:5px;
+}
+.testimonial-item .customer .test-text h6{
+    color:#033e55;
+    font-weight:600;
+    line-height: 24px;
+}
+.testimonial-item .customer .test-text h6 span{
+    display: block;
+    font-size: 12px;
+    color: #242424;
+    letter-spacing:0.2px;
+}
+/*=====End of testimonial section===*/
+/*=====blog section===*/
+.blog-section{
+    padding-bottom:50px;
+}
+.single-blog{
+    margin-bottom: 42px;
+}
+.single-blog img{
+    min-width: 100%;
+    margin-bottom: 30px;
+}
+.single-blog .blog-detail{
+    margin-bottom: 10px;
+}
+.single-blog .blog-detail .blog-detail{
+    font-size:16px;
+    color:#030942;
+    display: inline-block;
+    margin-right: 8px;
+}
+.single-blog .blog-detail .tag{
+    font-size:16px;
+    color:#030942;
+}
+.single-blog h4 a{
+    color: #030942;
+    font-weight: bold;
+    line-height: 30px;
+}
+/*=====End of blog section===*/
+/*=====Contact section===*/
+.contact .icon-box{
+    color:#030942;
+    text-align:center;
+    box-shadow:0 0 15px rgba(2,81,160,0.6);
+    padding:20px 0 30px 0;
+}
+.contact .icon-box i.fab{
+    font-size:20px;
+    color:#0292f1;
+    border-radius: 50%;
+    padding:8px;
+    background:#030942;
+}
+.contact .icon-box h3{
+    font-size:20px;
+    color:#000;
+    font-weight:bold;
+    margin:10px 0;
+}
+.contact .icon-box p{
+    padding:0;
+    line-height:24px;
+    font-size:14px;
+    margin-bottom:0;
+}
+.contact .social-links{
+    margin-top:15px;
+    display:flex;
+    justify-content:center;
+}
+.contact .social-links a{
+    font-size:16px;
+    display: inline-block;
+    color:#fff;
+    line-height:1;
+    margin:0 8px;
+    transition: 0.3s;
+    padding:10px;
+    border-radius:50px;
+    border:1px solid #030942;
+}
+.contact .social-links a:hover{
+    color:#fff;
+    border-color:#030942;
+    background:#0292f1;
+}
+.contact form{
+    box-shadow:0 0 15px rgba(2,81,160,0.6);
+    padding:27px;
+
+
+}
+/*=====End of contact section===*/
+.instagram .container-fluid{
+    padding-left:0;
+    padding-right:0;
+}
+.instagram .insta-img{
+    display:block;
+    height:280px;
+    position:relative;
+
+}
+.instagram .insta-img .icon{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(47,137,5225,0.8);
+    opacity:0;
+    transition:all 0.3s ease;
+
+}
+.instagram .insta-img:hover .icon{
+    opacity:1;
+}
+.instagram .heading-section h2{
+    font-size:30px;
+}
+#footer{
+    padding:0 0 30px 0;
+    color:#000;
+    font-size:16px;
+    background:#0292f1;
+}
+#footer .footer-newsletter{
+    padding:50px 0;
+    background:#0292f1;
+    text-align:center;
+    font-size:15px;
+}
+#footer .footer-newsletter h4{
+    font-size:24px;
+    margin:0 0 20px 0;
+    padding:0;
+    line-height: 1;
+    font-weight: bold;
+    color:#000;
+}
+#footer .footer-newsletter form{
+    margin-top:30px;
+    background:#fff;
+    padding:6px 10px;
+    position:relative;
+    border-radius:4px;
+    box-shadow: 0px 2px 15px rgba(0,25,41,0.4);
+    text-align:left;
+}
+#footer .footer-newsletter form input[type="email"]{
+    border:0;
+    padding: 4px 8px;
+    width: calc(100% - 100px);
+}
+#footer .footer-newsletter form input[type="submit"]{
+    position:absolute;
+    top:0;
+    right:-2px;
+    bottom:0;
+    border:0;
+    background: none;
+    font-size:16px;
+    padding:0 20px;
+    background: #030942;
+    color:#fff;
+    transition:0.3s;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0px 2px 15px rgba(253, 253, 253, 0.7);
+}
+#footer .footer-newsletter form input[type="submit"]:hover{
+    background:#0292f1;
+}
+#footer .copyright{
+    float:left;
+    color:#000;
+}
+#footer .credits{
+    float: right;
+    font-size:16px;
+    color:#000;
+}
+#footer .credits a{
+    color:#000;
+}
+@media (max-width:575px){
+    #footer .copyright, #footer .credits{
+        float:none;
+        text-align:center;
+    }
+}
+      </style>
+  </head>
+  <body>
+    <!---Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light main-navbar
+      bg m-navbar-light" id="main-navbar">
+      <div class="container">
+          <a class="navbar-brand"href="#">Astral Aura</a>
+          <button class="navbar-toggler"type="button"data-toggle="collapse"
+          data-target="#my-nav" aria-controls="p-nav"aria-expanded="false"
+          aria-label="toggle-navigation">
+        <span>Menu</span>
+        </button>
+        <div class="collapse navbar-collapse"id="my-nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a href=""class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about"class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services"class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contacts"class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+    <!--End of navbar-->
+    <!---Hero-Image-->
+    <section class="hero-wrap"
+    style="background-image:url('https://i.postimg.cc/RVYKYw7J/hero.jpg');">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters main-text align-items-center">
+            <div class="col-lg-7 col-md-6 d-flex align-items-end">
+                <div class="text">
+                    <h1 class="mb-4 text-capitalize">find a perfect deal<br>
+                        for your next trip
+                      </h1>
+                      <p style="font-size:18px;">
+
+Welcome to Astral Aura, your portal to boundless horizons and unforgettable journeys! Embark on a celestial adventure with us as we guide you through extraordinary destinations and immersive experiences. Let Astral Aura be your compass, illuminating the path to captivating travels and enriching encounters. Bon voyage! 🌌✨</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!---End of Hero-Image-->
+
+<!---Welcome/about section-->
+<!------------->
+<!---Popular Places-->
+<section>
+      <!-- Popular Places -->
+      <div class="popular section-bg img-effect mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+        <div class="section-title text-center">
+          <h1 class="text-white">Popular Places </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ End of Popular Places-->
+    <!-- Other Popular  -->
+    <div class="all-image">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-md-5">
+                    <div class="single-img">
+                        <div class="img-thumb">
+                            <img src="https://i.postimg.cc/FK4dtp7z/img-1.jpg" alt="">
+                        </div>
+                        <div class="img-hover">
+                            <div class="title">
+                                    <h3>Aare River</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-md-7">
+                    <div class="single-img">
+                        <div class="img-thumb">
+                            <img src="https://i.postimg.cc/gkx63rCz/img-2.jpg" alt="">
+                        </div>
+
+                        <div class="img-hover">
+                            <div class="title">
+                                    <h3>Uri Alps</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single-img radial">
+                        <div class="img-thumb">
+                            <img src="https://i.postimg.cc/Hnd1dJbQ/img-3.jpg" alt="">
+                        </div>
+                       <div class="img-hover">
+                        <div class="title">
+                        <h3>Chapel Bridge</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single-img radial">
+                        <div class="img-thumb">
+                            <img src="https://i.postimg.cc/2SwbDvvx/img-4.jpg" alt="">
+                        </div>
+                         <div class="img-hover">
+                            <div class="title">
+                                    <h3>Matterhorn,Alps</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-12 col-lg-4">
+                    <div class="single-img radial">
+                        <div class="img-thumb">
+                            <img src="https://i.postimg.cc/TwmTRMFX/img-5.jpg" alt="">
+                        </div>
+                     <div class="img-hover">
+                            <div class="title">
+                                    <h3>Blue Lake</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              </div>
+    </div>
+
+    </section>
+<!--end of Popular Places-->
+<!--- Team Section-->
+<section class="team section-bg mt-5">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="text-center">Team</h2>
+            <p class="text-center">
+"Meet the Astral Aura team – passionate wanderers crafting extraordinary travel experiences. We're your cosmic companions, weaving dreamlike journeys with stellar service. Join us in exploring the extraordinary. Your adventure begins with us!"</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div class="member">
+                    <div class="member-img">
+                        <img src="static/images/albert.jpg"class="img-fluid"alt="">
+                    </div>
+                    <div class="member-info">
+                        <h4>Albert</h4>
+                        <span>Team Manager</span>
+                    </div>
+                </div>
+            </div>
+            <!---->
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div class="member">
+                    <div class="member-img">
+                        <img src="static/images/sarah.jpg"class="img-fluid"alt="">
+     </div>
+                    <div class="member-info">
+                        <h4>Sarah</h4>
+                        <span>Guide 1</span>
+                    </div>
+                </div>
+            </div>
+            <!---->
+    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div class="member">
+                    <div class="member-img">
+  <img src="static/images/das.jpg"class="img-fluid"alt="">
+  </div>
+     <div class="member-info">
+                        <h4>Das</h4>
+                        <span>Guide 2</span>
+                    </div>
+                </div>
+            </div>
+            <!---->
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div class="member">
+                    <div class="member-img">
+                        <img src=" static/images/john.jpg "class="img-fluid"alt=" images not visible">
+                    </div>
+                    <div class="member-info">
+                        <h4>John Abraham</h4>
+                        <span>Food Management</span>
+                    </div>
+                </div>
+            </div>
+            <!---->
+
+
+
+        </div>
+    </div>
+</section>
+<!---End of Team Section-->
+<!---Package Section-->
+<section class="package section-padding mt-3">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-5">
+                <div class="section-title text-center">
+                    <h2 class="py-3">Packages We Offer</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-xl-6">
+                <div class="package-1">
+                    <img src="https://i.postimg.cc/bNr1Lmtj/fa-3.jpg"class="img-fluid"alt="">
+                    <div class="package-text">
+                        <p>Discover seamless travel with Astral Aura's curated packages. Your next adventure to Phuket begins here.</p>
+                        <a href="package1"class="btn-package p-2">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!----->
+            <div class="col-md-6 col-xl-6">
+                <div class="package-1">
+                    <img src="https://i.postimg.cc/cCwGNRK1/fa-2.jpg"class="img-fluid"alt="">
+                    <div class="package-text">
+                        <p>Embark on a blissful escape with Astral Aura's Goa package. Sun-kissed beaches, historical charm, and culinary delights await. Your Goan retreat starts now.</p>
+                        <a href="package2"class="btn-package p-2">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!---End of Package Section-->
+<!--- Historical Places Section-->
+<section class="mt-2">
+    <div class="historical-places">
+        <div class="container">
+            <div class="row-justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-center mb-70">
+                        <h3 class="text-uppercase text-center">historical places</h3>
+                        <p class="text-center">"Embark on a journey through time and culture as you explore the rich tapestry of historical places with Astral Aura's curated experiences."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-dest">
+                        <div class="thumb">
+                            <img src="https://cdn.forevervacation.com/uploads/blog/language-in-bangkok-3348.jpg"class="img-fluid"alt="">
+                            <h3 class="price">45000</h3>
+                        </div>
+                        <div class="dest-info">
+                                <h3>Bangkok</h3>
+                            </a>
+                            <p>Vibrant mix of tradition and modernity, from markets to temples and street food.</p>
+                            <div class="rating d-flex justify-content-between">
+                          <span class="d-flex justify-content-center align-items-center">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <a href="#">(21 Review)</a>
+                          </span>
+                          <div class="days">
+                              <i class="fas fa-clock-o">
+                                  <a hrf="#">4 Days</a>
+                              </i>
+                          </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-dest">
+                        <div class="thumb">
+                            <img src="https://www.visitsingapore.com/singapore-itineraries/best-of-singapore-in-7-days/jcr:content/par-carousel/carousel_detailpage/carousel/item_1.thumbnail.carousel-img.600.338.jpg"class="img-fluid"alt="">
+                            <h3 class="price">55000</h3>
+                        </div>
+                        <div class="dest-info">
+                                <h3>Singapore</h3>
+                            </a>
+                            <p>Explore Singapore's futuristic elegance, lush greenery, and diverse culinary delights in a city where modernity meets culture.</p>
+                            <div class="rating d-flex justify-content-between">
+                          <span class="d-flex justify-content-center align-items-center">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <a href="#">(17 Review)</a>
+                          </span>
+                          <div class="days">
+                              <i class="fas fa-clock-o">
+                                  <a hrf="#">5 Days</a>
+                              </i>
+                          </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-dest">
+                        <div class="thumb">
+                            <img src="https://i.ytimg.com/vi/XUZk8FIWMOA/maxresdefault.jpg"class="img-fluid"alt="">
+                            <h3 class="price">15000</h3>
+                        </div>
+                        <div class="dest-info">
+                                <h3>Kasol</h3>
+                            </a>
+                            <p>Discover the serene charm of Kasol in the Himalayas, where nature, hippie culture, and stunning treks come together for a unique mountain getaway.</p>
+                            <div class="rating d-flex justify-content-between">
+                          <span class="d-flex justify-content-center align-items-center">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <a href="#">(12 Review)</a>
+                          </span>
+                          <div class="days">
+                              <i class="fas fa-clock-o">
+                                  <a hrf="#">3 Days</a>
+                              </i>
+                          </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-dest">
+                        <div class="thumb">
+                            <img src="https://a.cdn-hotels.com/gdcs/production153/d1371/e6c1f55e-51ac-41d5-8c63-2d0c63faf59e.jpg"class="img-fluid"alt="">
+                            <h3 class="price">80000</h3>
+                        </div>
+                        <div class="dest-info">
+                                <h3>London</h3>
+                            </a>
+                            <p>Explore London's timeless charm, blending iconic landmarks, rich history, and a vibrant cosmopolitan spirit.</p>
+                            <div class="rating d-flex justify-content-between">
+                          <span class="d-flex justify-content-center align-items-center">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <a href="#">(8 Review)</a>
+                          </span>
+                          <div class="days">
+                              <i class="fas fa-clock-o">
+                                  <a hrf="#">6 Days</a>
+                              </i>
+                          </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-dest">
+                        <div class="thumb">
+                            <img src="https://www.travelnrelax.com/wp-content/uploads/2023/05/view-great-sphinx.jpg"class="img-fluid"alt="">
+                            <h3 class="price">65000</h3>
+                        </div>
+                        <div class="dest-info">
+                                <h3>Egypt</h3>
+                            </a>
+                            <p>Discover Egypt's timeless wonders – ancient pyramids, storied temples, and the mystical Nile.</p>
+                            <div class="rating d-flex justify-content-between">
+                          <span class="d-flex justify-content-center align-items-center">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <a href="#">(15 Review)</a>
+                          </span>
+                          <div class="days">
+                              <i class="fas fa-clock-o">
+                                  <a hrf="#">7 Days</a>
+                              </i>
+                          </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-dest">
+                        <div class="thumb">
+                            <img src="https://media.cnn.com/api/v1/images/stellar/prod/230516112548-01-crossroads-maldives-aerial.jpg?c=original"class="img-fluid"alt="">
+                            <h3 class="price">30000</h3>
+                        </div>
+                        <div class="dest-info">
+                                <h3>Maldives</h3>
+                            </a>
+                            <p>Maldives: A paradise of turquoise waters, white-sand beaches, and luxury overwater bungalows.</p>
+                            <div class="rating d-flex justify-content-between">
+                          <span class="d-flex justify-content-center align-items-center">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <a href="#">(10 Review)</a>
+                          </span>
+                          <div class="days">
+                              <i class="fas fa-clock-o">
+                                  <a hrf="#">4 Days</a>
+                              </i>
+                          </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!---End of Historical Places Section-->
+<!---Customers Section-->
+<section class="testimonial-section mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2>Happy Customers</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="testimonial-item">
+                    <div class="test-date">
+                        10/12/2022
+                    </div>
+                    <h4>"Astral Aura - Where Dreams Take Flight"
+
+                    </h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Just had an incredible journey with Astral Aura! Seamless planning, breathtaking destinations, and stellar service. They truly made my travel dreams come true. Can't wait for the next cosmic adventure! 🌟 #AstralAuraAdventures"</p>
+                    <div class="customer">
+                        <div class="customer-photo">
+                            <img src="https://i.postimg.cc/CK51p2wF/team.jpg"alt="">
+                        </div>
+                        <div class="test-text">
+                            <h6>Aiswarya <span>India</span></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----->
+            <div class="col-lg-6">
+                <div class="testimonial-item">
+                    <div class="test-date">
+                        12/03/2023
+                    </div>
+                    <h4>  Igniting Wanderlust with Five-Star Flames....!
+
+                    </h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>
+"5 stars for Astral Aura! Unforgettable experiences, top-notch service, and a team that turns travel into pure magic. From start to finish, they exceeded all expectations. Counting down to the next enchanting escape with them! 🚀✨ #AstralAuraMagic"</p>
+                    <div class="customer">
+                        <div class="customer-photo">
+                            <img src="https://i.postimg.cc/CK51p2wF/team.jpg"alt="">
+                        </div>
+                        <div class="test-text">
+                            <h6>Navaneeth K <span>California</span></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----->
+        </div>
+    </div>
+</section>
+<!---End of Customers Section-->
+<!---Contact Section-->
+
+<!---End of Contact Section-->
+<!------>
+<section class="instagram mt-5">
+    <div class="container-fluid">
+        <div class="row no-gutters justify-content-center pb-5">
+            <div class="col-md-7 text-center heading-section">
+                <h2><span>Instagram</span></h2>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-sm-12 col-md">
+                <img src="https://i.postimg.cc/wBCWYSDJ/fa-6.jpg"class="img-fluid">
+                <div class="icon d-flex justify-content-center">
+                    <span class="icon-instagram align-self-center"></span>
+                </div>
+            </div>
+            <!----->
+            <div class="col-sm-12 col-md">
+                <img src="https://i.postimg.cc/W3ZHD2sX/fa-4.jpg"class="img-fluid">
+                <div class="icon d-flex justify-content-center">
+                    <span class="icon-instagram align-self-center"></span>
+                </div>
+            </div>
+            <!----->
+            <div class="col-sm-12 col-md">
+                <img src="https://i.postimg.cc/bNr1Lmtj/fa-3.jpg"class="img-fluid">
+                <div class="icon d-flex justify-content-center">
+                    <span class="icon-instagram align-self-center"></span>
+                </div>
+            </div>
+            <!----->
+            <div class="col-sm-12 col-md">
+                <img src="https://i.postimg.cc/nz1qS52n/fa-5.jpg"class="img-fluid">
+                <div class="icon d-flex justify-content-center">
+                    <span class="icon-instagram align-self-center"></span>
+                </div>
+            </div>
+</section>
+<!---->
+<footer id="footer">
+    <div class="footer-newsletter">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h4>Join Astral Aura's Celestial Newsletter!</h4>
+                    <p>Join our newsletter and unlock a universe of exclusive travel inspirations, deals, and celestial surprises. Stay connected to the magic of exploration with Astral Aura. Sign up now for a journey of a lifetime!</p>
+                    <form>
+                        <input type="email"name="email">
+                        <input type="submit"value="Subscribe">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  <div class="container py-4">
+      <div class="copyright">
+          &copy;Copyright<strong><span>  Astral Aura</span></strong>
+          .All Rights Reserved
+      </div>
+      <div class="credits">
+          Designed by<a href="#">  Astral Aura</a>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
